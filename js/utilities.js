@@ -13,3 +13,8 @@ function getClickedValueByID(id){
     document.getElementById('transaction-container').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
+
+function changeBgOnClick(){
+    document.getElementById('btn-donate').classList.toggle('bg-primary')
+    document.getElementById('btn-history').classList.toggle('bg-primary')
+}

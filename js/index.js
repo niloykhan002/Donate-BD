@@ -26,6 +26,7 @@ document.getElementById('btn-card1').addEventListener('click', function(){
         <p>${new Date()}</p>
         `
         document.getElementById('transaction-container').appendChild(div);
+        my_modal_5.showModal();
     }
 })
 
@@ -57,6 +58,7 @@ document.getElementById('btn-card2').addEventListener('click', function(){
         <p>${new Date()}</p>
         `
         document.getElementById('transaction-container').appendChild(div);
+        my_modal_5.showModal();
     }
 })
 
@@ -88,6 +90,7 @@ document.getElementById('btn-card3').addEventListener('click', function(){
         <p>${new Date()}</p>
         `
         document.getElementById('transaction-container').appendChild(div);
+        my_modal_5.showModal();
     }
 
 })

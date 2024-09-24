@@ -61,9 +61,10 @@
         </nav>
         <div class="container mx-auto flex justify-center lg:mt-12 mb-8">
             <div class="flex gap-5">
-                <button id="btn-donate" class="btn bg-primary text-xl font-semibold px-8 py-4 h-auto">Donation</button>
-                <button id="btn-history"
-                    class="btn text-xl font-medium px-8 py-4 h-auto btn-outline text-dark2 border-dark3">History</button>
+                <button onclick="changeBgOnClick()" id="btn-donate"
+                    class="btn bg-primary text-xl font-semibold px-8 py-4 h-auto">Donation</button>
+                <button onclick="changeBgOnClick()" id="btn-history"
+                    class="btn text-xl font-medium px-8 py-4 h-auto text-dark2 border-dark3 ">History</button>
             </div>
         </div>
     </header>
@@ -157,6 +158,25 @@
 
     <section id="transaction-container" class="container mx-auto space-y-4 mb-14 hidden mt-10">
         <h1 class="font-bold text-3xl">History</h1>
+    </section>
+    <section>
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box flex flex-col items-center">
+                <h3 class="text-4xl font-bold">Congrats!</h3>
+                <span class="py-5">
+                    <img src="./assets/coin.png" alt="">
+                </span>
+                <p class="text-dark2">You Have Donated for Humankind</p>
+                <p class="font-bold py-4 text-xl">Successfully</p>
+                <div>
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn text-dark2">Close Confirmation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </section>
 
     <footer class="bg-[#F9F7F3] h-40">
